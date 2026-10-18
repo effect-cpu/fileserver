@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-label="File Server">
+  <title>文件服务器 · File Server</title>
+
+  <defs>
+    <!-- 背景:蓝 → 青绿 对角渐变 -->
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2E86EA"/>
+      <stop offset="0.55" stop-color="#1E9BC9"/>
+      <stop offset="1" stop-color="#00A38B"/>
+    </linearGradient>
+  </defs>
+
+  <!-- 圆角方形底 -->
+  <rect x="0" y="0" width="512" height="512" rx="116" ry="116" fill="url(#bg)"/>
+
+  <!-- 顶部高光,让底板有玻璃质感 -->
+  <path d="M0,116 A116,116 0 0 1 116,0 H396 A116,116 0 0 1 512,116 V148 H0 Z"
+        fill="#FFFFFF" opacity="0.13"/>
+
+  <!-- Wi-Fi 信号:一个圆点 + 两道圆弧 -->
+  <circle cx="256" cy="228" r="17" fill="#FFFFFF"/>
+  <path d="M219.2,191.2 A52,52 0 0 1 292.8,191.2"
+        fill="none" stroke="#FFFFFF" stroke-width="25" stroke-linecap="round"/>
+  <path d="M193.8,165.8 A88,88 0 0 1 318.2,165.8"
+        fill="none" stroke="#FFFFFF" stroke-width="25" stroke-linecap="round" opacity="0.72"/>
+
+  <!-- 文件夹投影 -->
+  <path d="M72,316 A22,22 0 0 1 94,294 H200 L228,318 H418 A22,22 0 0 1 440,340 V452 A22,22 0 0 1 418,474 H94 A22,22 0 0 1 72,452 Z"
+        fill="#0B3550" opacity="0.16" transform="translate(0,7)"/>
+
+  <!-- 文件夹主体 -->
+  <path d="M72,314 A22,22 0 0 1 94,292 H200 L228,316 H418 A22,22 0 0 1 440,338 V450 A22,22 0 0 1 418,472 H94 A22,22 0 0 1 72,450 Z"
+        fill="#FFFFFF"/>
+</svg>

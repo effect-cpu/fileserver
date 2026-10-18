@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dlgRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/scrim">
+
+    <LinearLayout
+        android:id="@+id/dlgCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/card_bg"
+        android:elevation="18dp"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/dlgTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/guide_title"
+            android:textColor="@color/textMain"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/dlgSub"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="@string/loading"
+            android:textColor="@color/textSub"
+            android:textSize="12sp" />
+
+        <ScrollView
+            android:id="@+id/dlgScroll"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="14dp"
+            android:layout_weight="1"
+            android:scrollbars="vertical">
+
+            <TextView
+                android:id="@+id/dlgBody"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="5dp"
+                android:text=""
+                android:textColor="@color/textMain"
+                android:textColorLink="@color/colorPrimary"
+                android:textSize="14sp" />
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/dlgReject"
+                android:layout_width="0dp"
+                android:layout_height="46dp"
+                android:layout_weight="1"
+                android:background="@drawable/liquid_btn"
+                android:minWidth="0dp"
+                android:text="@string/disagree_exit"
+                android:textColor="@color/textMain"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/dlgAgree"
+                android:layout_width="0dp"
+                android:layout_height="46dp"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/liquid_btn_primary"
+                android:minWidth="0dp"
+                android:text="@string/agree"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

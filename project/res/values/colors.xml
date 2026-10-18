@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1E88E5</color>
+    <color name="colorPrimaryDark">#1565C0</color>
+    <color name="colorAccent">#00897B</color>
+    <color name="danger">#E53935</color>
+
+    <color name="bg">#E4E9F1</color>
+
+    <color name="textMain">#1F2937</color>
+    <color name="textSub">#64707F</color>
+    <color name="tabIdle">#7C8798</color>
+    <color name="iconOnGlass">#1F2937</color>
+    <color name="line">#DCE1E9</color>
+    <color name="separator">#3DFFFFFF</color>
+
+    <color name="glassTop">#F0FFFFFF</color>
+    <color name="glassBottom">#B8FFFFFF</color>
+    <color name="glassStroke">#B3FFFFFF</color>
+    <color name="glassSheen">#99FFFFFF</color>
+    <color name="glassRimSoft">#4DFFFFFF</color>
+    <color name="glassRimBright">#E6FFFFFF</color>
+
+    <color name="cardTop">#D9FFFFFF</color>
+    <color name="cardBottom">#AFFFFFFF</color>
+    <color name="cardStroke">#B3FFFFFF</color>
+    <color name="cellSolid">#7AFFFFFF</color>
+    <color name="cellStroke">#66FFFFFF</color>
+
+    <color name="btnPrimaryTop">#E64A9FE8</color>
+    <color name="btnPrimaryBottom">#B31E88E5</color>
+    <color name="btnTealTop">#E62BAE9E</color>
+    <color name="btnTealBottom">#B300897B</color>
+    <color name="btnRedTop">#E6ED5C57</color>
+    <color name="btnRedBottom">#B3D93025</color>
+    <color name="btnGlassTop">#F0FFFFFF</color>
+    <color name="btnGlassBottom">#C7FFFFFF</color>
+    <color name="btnStroke">#B3FFFFFF</color>
+
+    <color name="tabIndicator">#A6FFFFFF</color>
+    <color name="tabIndicatorStroke">#4DFFFFFF</color>
+
+    <color name="scrim">#66000000</color>
+    <color name="fieldSolid">#99FFFFFF</color>
+    <color name="fieldStroke">#B3FFFFFF</color>
+    <color name="segmentOn">#E01E88E5</color>
+    <color name="segmentOff">#59FFFFFF</color>
+</resources>

@@ -1,0 +1,22 @@
+# 构建产物
+/out/
+/build/
+*.apk
+*.idsig
+
+# 本地工具链(体积大,不要提交)
+/android-14/
+/android-34/
+/android-sdk/
+android.jar
+build-tools.zip
+platform-*.zip
+
+# 密钥
+*.keystore
+*.jks
+
+# IDE / 系统
+.idea/
+*.iml
+.DS_Store
