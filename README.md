@@ -58,23 +58,6 @@ A lightweight LAN file server for Android — pick a folder, tap once, and it be
 | 查看用户协议 | 只读弹窗,markdown 渲染 |
 | 前往开发者仓库 | 跳转本项目仓库 |
 
-## 🛠 自行构建
-
-仓库只包含源码,**不含** Android SDK 与构建工具。编译需要:
-
-- `android.jar`(API 34)
-- Android build-tools(`aapt`、`zipalign`、`apksigner`、`d8`)
-- JDK 8+(本项目用 JDK 17 编译,`-source/-target 1.8`)
-
-把工具就位后(脚本默认约定放在 `android-14/` 与 `android-34/android.jar`):
-
-```bash
-./build.sh
-# 产物:out/app-release.apk
-```
-
-> 构建脚本用 **debug keystore** 签名,仅供自用/测试;上架需换正式签名。
-
 ## 📄 云端配置文件(可选)
 
 「查看更新」会读取仓库根目录的 `version2.json`(不放也能用,只是没有更新提示):
@@ -98,10 +81,6 @@ A lightweight LAN file server for Android — pick a folder, tap once, and it be
 3. **IPv6 能否访问**取决于运营商是否下发、路由器是否开启 IPv6;`fe80::` 链路本地地址不会被显示(无法跨设备使用)。
 4. 封禁 IP / 反爬虫 / 验证码都是「提高门槛」,不是强认证 —— 真要挡得住需要用验证码 + 行为限制组合。
 5. 服务器默认跟随 App 进程运行(带前台服务保活),系统回收进程后服务即停止。
-
-## 📜 许可
-
-尚未指定开源许可证。若需正式开源,请补充 `LICENSE`(如 MIT / Apache-2.0)。
 
 ---
 
@@ -149,30 +128,6 @@ A lightweight LAN file server for Android — pick a folder, tap once, and it be
 | User agreement | Read-only dialog, Markdown rendered |
 | Developer repository | Opens this repository |
 
-## 🛠 Building it yourself
-
-The repository contains **only sources** — no Android SDK or build tools. You need:
-
-- `android.jar` (API 34)
-- Android build-tools (`aapt`, `zipalign`, `apksigner`, `d8`)
-- JDK 8+ (this project compiles with JDK 17, `-source/-target 1.8`)
-
-By default the script expects the tools in `android-14/` and `android-34/android.jar`:
-
-```bash
-./build.sh
-# output: out/app-release.apk
-```
-
-Paths can be overridden:
-
-```bash
-BT_DIR=/path/to/build-tools ANDROID_JAR=/path/to/android.jar KEYSTORE=my.jks ./build.sh
-```
-
-> The script signs with the bundled **debug keystore** — fine for personal use and testing;
-> use a proper release key before publishing anywhere.
-
 ## 📄 Remote config (optional)
 
 "Check updates" reads `version2.json` from the repository root (optional — without it the app
@@ -203,8 +158,3 @@ download URL accepts `downloadUrl` / `apkUrl` / `url`.
    protection combine the CAPTCHA with behavioural limits.
 5. The server runs inside the app process (kept alive by a foreground service); if the system kills
    the process, the server stops.
-
-## 📜 License
-
-No license has been chosen yet. If you intend to open-source this, add a `LICENSE` file
-(e.g. MIT or Apache-2.0).
