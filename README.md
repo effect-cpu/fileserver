@@ -58,22 +58,6 @@ A lightweight LAN file server for Android — pick a folder, tap once, and it be
 | 查看用户协议 | 只读弹窗,markdown 渲染 |
 | 前往开发者仓库 | 跳转本项目仓库 |
 
-## 📄 云端配置文件(可选)
-
-「查看更新」会读取仓库根目录的 `version2.json`(不放也能用,只是没有更新提示):
-
-```json
-{
-  "version": "1.1",
-  "versionCode": 2,
-  "content": "## 更新内容\n\n1. 新增 xxx\n2. 修复 **若干问题**",
-  "downloadUrl": "https://github.com/effect-cpu/fileserver/releases"
-}
-```
-
-`content` 支持 Markdown。键名容错:版本名可用 `version` / `versionName` / `ver` / `tag`,
-编号可用 `versionCode` / `code` / `build`,下载地址可用 `downloadUrl` / `apkUrl` / `url`。
-
 ## ⚠️ 注意事项
 
 1. **仅限局域网使用。** 请勿把它对外开放(家庭宽带上行不允许,企业宽带除外),也请不要通过端口映射 / 内网穿透暴露到公网。
@@ -127,24 +111,6 @@ A lightweight LAN file server for Android — pick a folder, tap once, and it be
 | Check updates | Reads `version2.json` from the cloud; opens the release page when a newer version exists |
 | User agreement | Read-only dialog, Markdown rendered |
 | Developer repository | Opens this repository |
-
-## 📄 Remote config (optional)
-
-"Check updates" reads `version2.json` from the repository root (optional — without it the app
-simply shows no update prompt):
-
-```json
-{
-  "version": "1.1",
-  "versionCode": 2,
-  "content": "## What's new\n\n1. Added xxx\n2. Fixed **several issues**",
-  "downloadUrl": "https://github.com/effect-cpu/fileserver/releases"
-}
-```
-
-`content` supports Markdown. Key names are tolerant: version name accepts
-`version` / `versionName` / `ver` / `tag`, build number accepts `versionCode` / `code` / `build`,
-download URL accepts `downloadUrl` / `apkUrl` / `url`.
 
 ## ⚠️ Notes
 
