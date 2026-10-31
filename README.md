@@ -1,7 +1,7 @@
 # 文件服务器 · File Server
 
-一款轻量的 Android 局域网文件服务器 —— 选一个文件夹,点一下就变成网站,手机扫码即可访问
-A lightweight LAN file server for Android — pick a folder, tap once, and it becomes a website.
+一款轻量的 Android 局域网文件服务器
+A lightweight LAN file server for Android
 
 **语言 / Language:[中文](#中文)&nbsp;&nbsp;·&nbsp;&nbsp;[English](#english)**
 
