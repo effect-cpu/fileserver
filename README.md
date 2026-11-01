@@ -25,6 +25,12 @@ A lightweight LAN file server for Android
 | **主题** | 浅色 / 深色 / 跟随系统 |
 | **多语言** | 简体中文 / English / 跟随系统 |
 
+## 短板
+1. 目前仅支持**静态网页**，暂不支持**python**、**nodejs**等后端
+2. 不支持自定义反爬虫频率限制
+3. 不支持设置是否支持多线程并发/下载，以及不支持设置最大线程数、超过处理（例如封ip、限速等）
+> 以上这些后来会慢慢支持
+
 ## 端口设置1024~65535原因
 1. 0–1023：知名端口（特权端口，80、443、22、3306 这类）
 ​
@@ -55,6 +61,7 @@ A lightweight LAN file server for Android
 | 封禁 IP | 精确 / 通配规则,可随时解除 |
 | 主题模式 | 跟随系统 / 浅色 / 深色 |
 | 语言 | 跟随系统 / 简体中文 / English |
+> 反爬虫目前不支持自定义频率限制
 
 ## 注意事项
 
@@ -62,6 +69,7 @@ A lightweight LAN file server for Android
 2. **HTTPS 用自签名证书**,浏览器一定会提示「不受信任」,这是自签名证书的固有现象。
 3. **IPv6 能否访问**取决于运营商是否下发、路由器是否开启 IPv6;`fe80::` 链路本地地址不会被显示(无法跨设备使用)。
 4. 封禁 IP / 反爬虫 / 验证码都是「提高门槛」,不是强认证，真要挡得住需要用验证码 + 行为限制组合。
+> 后面会加强校验、限制
 5. 服务器默认跟随 App 进程运行(带前台服务保活),系统回收进程后服务即停止。
 
 ---
@@ -83,6 +91,12 @@ A lightweight LAN file server for Android
 | **IP banning** | Exact or wildcard (`192.168.1.*`), with add/remove list |
 | **Theme** | Light / dark / follow system |
 | **Languages** | 简体中文 / English / follow system — |
+
+## Limitations
+1. Currently, it only supports **static web pages**; backends such as **Python** and **Node.js** are not supported yet.
+2. It does not support customizing the anti-crawling frequency limit.
+3. It does not support setting whether multi-threaded concurrency/downloading is allowed, nor does it support setting the maximum number of threads or implementing over-limit handling (e.g., IP blocking, rate limiting, etc.).
+> These features will be gradually added in the future.
 
 ## Reasons for port settings 1024–65535
 1. 0–1023: Well-known ports (privileged ports, such as 80, 443, 22, 3306, etc.)
@@ -114,6 +128,7 @@ The author utilized the second and third categories, as this software is intende
 | Banned IPs | Exact / wildcard rules, removable at any time |
 | Theme | Follow system / light / dark |
 | Language | Follow system / 简体中文 / English |
+> Anti-crawling currently does not support custom frequency limits
 
 ## Notes
 
@@ -125,5 +140,6 @@ The author utilized the second and third categories, as this software is intende
    out because they cannot be used across devices.
 4. IP banning, anti-crawler and CAPTCHA only **raise the bar** — they are not authentication. For real
    protection combine the CAPTCHA with behavioural limits.
+> Later, validation and restrictions will be enhanced.
 5. The server runs inside the app process (kept alive by a foreground service); if the system kills
    the process, the server stops.
